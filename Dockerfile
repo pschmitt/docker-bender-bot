@@ -1,6 +1,6 @@
 FROM alpine:3.3
 
-RUN apk --update add build-base python python-dev py-pip py-gunicorn
+RUN apk --update add build-base python python-dev py-pip py-gunicorn curl
 COPY start.sh /usr/bin/start.sh
 
 VOLUME /app
